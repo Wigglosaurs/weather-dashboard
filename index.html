@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <title>Weather Dashboard</title>
 </head>
 
@@ -15,14 +16,13 @@
 
 
     <main>
-        <div class="card">
-            <h3>Search for a City</h3>
-            <form>
-                <label class="form-label" for="city">City</label>
-                <input name="city" id="city" type="text" autofocus="true" class="form-input" />
-                <button type="submit" class="btn">Search</button>
-            </form>
-        </div>
+        <form>
+            <div class="mb-3">
+                <label for="exampleSearchCity" class="form-label">Search for a City</label>
+                <input type="search" class="form-control" id="exampleSearchCity" aria-describedby="cityHelp">
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
     </main>
 
 
